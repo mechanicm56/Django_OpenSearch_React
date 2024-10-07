@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@300;400;500;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #1c2331;
+}
+
+// h1, h2, h3, h4, h5, h6 {
+//   font-family: 'Lobster', cursive;
+// }
+
+// Custom Styles
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+// VARIABLES
+$bg: url("https://wallpaperscraft.com/image/coffee_coffee_beans_cupcake_candy_93301_1920x1080.jpg") no-repeat center;
+$food: url("http://img.taste.com.au/UZVXAdo7/taste/2016/11/chinese-egg-noodle-and-vegetable-stir-fry-94186-1.jpeg") no-repeat center;
+
+// FONT
+$font: 'Roboto', sans-serif;
+
+// COLORS
+$white: #fff;
+$black: #212129;
+$gray: #9B9B9B;
+$heart: #17BEBB;
+$star: #FFE500;
+$button: #EF3E36;
+
+* {
+   margin: 0;
+   padding: 0;
+//    font-family: $font;
+   list-style-type: none;
+   text-decoration: none;
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   -o-box-sizing: border-box;
+   box-sizing: border-box;
+}
+
+img {
+   max-width: 100%;
+}
+
+html, body {
+   height: 100%;
+}
+
+.recipe-card-3 {
+	position: relative;
+	border-radius: 15px;
+	overflow: hidden;
+	background-color: #fff;
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+	.recipe-cover {
+		max-height: 160px;
+		overflow: hidden;
+		img {
+			object-fit: cover;
+			object-position: center center;
+			max-width: 100%;
+			height: 200px;
+			width: 100%;
+		}
+	}
+	.recipe-info {
+		padding: 20px;
+		h4 {
+			color: #000;
+			font-weight: bold;
+		}
+		span {
+			color: #000;
+		}
+	}
+	.recipe-overview {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		column-gap: 1.4rem;
+		margin-top: 10px;
+	}
+	.recipe-time {
+		display: flex;
+		align-items: center;
+		flex-direction: row;
+		font-size: 12px;
+		color: #808080;
+		&::before {
+			content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='%23808080' class='w-6 h-6'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' d='M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z' /%3E%3C/svg%3E");
+			width: 20px;
+			height: 20px;
+			margin-right: 4px;
+		}
+	}
+	.recipe-serve {
+		display: flex;
+		align-items: center;
+		flex-direction: row;
+		font-size: 12px;
+		color: #808080;
+		&::before {
+			overflow: hidden;
+			content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' id='Outline' viewBox='0 0 512 512' width='24' height='24' fill='%23808080'%3E%3Cpath d='M48,272H90.523a23.832,23.832,0,0,0,6.393,25.692l65.678,60.2.006-.006c.055.05.1.106.161.154L266.554,448H264a8,8,0,0,0-8,8v32a8,8,0,0,0,8,8h96a8,8,0,0,0,8-8V456a8,8,0,0,0-8-8V435.313l4.284-4.284A39.735,39.735,0,0,0,376,402.745V353.733l29-63.8A23.884,23.884,0,0,0,405.776,272H464a24.028,24.028,0,0,0,24-24V232a8,8,0,0,0-8-8H448v-8c0-92.636-75.364-168-168-168V32h8a8,8,0,0,0,0-16H224a8,8,0,0,0,0,16h8V48C139.364,48,64,123.364,64,216v8H32a8,8,0,0,0-8,8v16A24.028,24.028,0,0,0,48,272Zm57.677,5.1a7.823,7.823,0,0,1,7.456-5.1H117.7a8.016,8.016,0,0,1,7.283,4.689l6.014,13.23,0,.012,13.48,29.655L107.727,285.9A7.823,7.823,0,0,1,105.677,277.1ZM352,480H272V464h80Zm37.878-204.331a7.864,7.864,0,0,1,.557,7.641l-29.718,65.379A8.013,8.013,0,0,0,360,352v50.745a23.847,23.847,0,0,1-7.029,16.971l-6.628,6.627A8,8,0,0,0,344,432v16H290.984L174.56,347.1l-29-63.789A8,8,0,0,1,152.848,272h5.263a7.956,7.956,0,0,1,7.156,4.422l27.578,55.156a8,8,0,0,0,4.184,3.85l80,32a8,8,0,0,0,4.911.333l32-8a8,8,0,0,0,5.083-3.93l43.452-79.662A8,8,0,0,1,369.5,272h13.654A7.864,7.864,0,0,1,389.878,275.669ZM180.944,272h165.58l-39.867,73.09-26.088,6.521L205.8,321.7ZM248,32h16V48H248ZM80,216c0-83.813,68.187-152,152-152h48c83.813,0,152,68.187,152,152v8H80ZM40,240H472v8a8.009,8.009,0,0,1-8,8H48a8.009,8.009,0,0,1-8-8Z'%3E%3C/path%3E%3C/svg%3E");
+			width: 24px;
+			height: 20px;
+			margin-right: 4px;
+		}
+	}
+	.recipe-calories {
+		display: flex;
+		align-items: center;
+		flex-direction: row;
+		font-size: 12px;
+		color: #808080;
+		&::before {
+			overflow: hidden;
+			content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='%23808080'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' d='M15.362 5.214A8.252 8.252 0 0112 21 8.25 8.25 0 016.038 7.048 8.287 8.287 0 009 9.6a8.983 8.983 0 013.361-6.867 8.21 8.21 0 003 2.48z' /%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' d='M12 18a3.75 3.75 0 00.495-7.467 5.99 5.99 0 00-1.925 3.546 5.974 5.974 0 01-2.133-1A3.75 3.75 0 0012 18z' /%3E%3C/svg%3E%0A");
+			width: 22px;
+			height: 22px;
+			margin-right: 4px;
+		}
+	}
+	.recipe-about {
+		margin-top: 16px;
+		p {
+			font-size: 14px;
+			color: gray;
+			&:nth-last-child(1) {
+				margin-bottom: 0;
+			}
+		}
+	}
+}
+
+
