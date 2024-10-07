@@ -1,0 +1,7 @@
+1. Install pipx
+2. Install Poetry
+3. Install OpenSearch using suitable method ( For Window 11 use Docker file at backend/open_Search/install_opensearch.yml )
+3. Change OpenSearch service url in backend/open_Search/.env
+4. Use backend/open_Search/index.py to add data from "full_format_recipes.json" to Open Search
+5. Follow Setup in Readme.md for running project
+6. If problem presits please feel free to contact me
